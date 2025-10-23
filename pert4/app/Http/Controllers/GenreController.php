@@ -11,7 +11,6 @@ class GenreController extends Controller
     public function index()
     {
         $genres = Genre::all();
-
         return response()->json([
             'status' => 'success',
             'data' => $genres
